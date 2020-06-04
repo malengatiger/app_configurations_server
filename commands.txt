@@ -1,0 +1,8 @@
+## Deploying to Cloud Run on GCP 🍀
+####################################
+
+## 🌺 🌺 🌺 Build container image for cloud run
+gcloud builds submit --tag gcr.io/paymentplatform-33/configs
+
+#  🌼  🌼  🌼 Deploy container
+gcloud run deploy --image gcr.io/paymentplatform-33/configs --platform managed
